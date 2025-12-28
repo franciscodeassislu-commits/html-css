@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt.pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.512);
+            border-radius: 8px;
+        }
+
+        h1 {
+            background-color: antiquewhite;
+            box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.356);
+            border-radius: 4px;
+        }
+
+
+        nav {
+            background-color: rgb(116, 116, 116);
+            padding: 3px;
+            box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.648);
+            border-radius: 4px;
+
+        }
+
+        nav>a {
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            margin-right: 25px;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.395);
+            border-radius: 8px;
+
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        article>aside {
+            background-color: rgb(153, 149, 149);
+            text-align: center;
+         border-radius: 4px;
+         font-size: 10px;
+         box-shadow: 1px 1px 1px rgb(224, 159, 5);
+  
+
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+
+        footer>p {
+            background-color: black;
+            padding: 3px;
+            margin: 0;
+            
+        }
+        footer{
+             box-shadow: 1px 1px 1px rgb(224, 159, 5);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esporte Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre Prtugal</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officia a ex asperiores molestiae
+                    quos quisquam aspernatur incidunt, inventore hic provident obcaecati rem tenetur eveniet sit facere
+                    enim? In, architecto!</p>
+                <aside>
+                    <p>Artigo escrito por Francisco</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desnvolvido pelo Curso em vídeo</p>
+    </footer>
+
+</body>
+
+</html>

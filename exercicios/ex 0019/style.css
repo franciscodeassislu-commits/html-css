@@ -1,0 +1,51 @@
+/*
+em HTML é id = em CSS é #
+em HTML é class = em CSS é .
+*/
+
+body {
+    background-color: rgb(196, 239, 234);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+color: rgb(29, 93, 4);
+}
+
+h1#principal {
+text-align: center;
+color: black;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-color: rgb(205, 204, 203);
+border-radius: 8px;
+margin: auto;
+}
+
+h2{
+    background-color: rgb(166, 240, 197);
+color: blueviolet;
+border-radius: 7px;
+background-color: rgb(205, 185, 161);
+}
+
+.basico{
+    color: blueviolet;
+    background-color: azure;
+    font-weight: bold;
+}
+
+span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:gray ;
+    border-radius: 3px;
+    border: 5px;
+}
+.intermediario{
+    color:rgb(0, 140, 255) ;
+    background-color: blanchedalmond;
+}
+
+.avancado{
+    color: rgb(124, 77, 5);
+    background-color: aliceblue;
+}
