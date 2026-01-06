@@ -1,5 +1,16 @@
 @charset"UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DynaPuff:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&family=Momo+Trust+Display&family=Momo+Trust+Sans:wght@200..800&family=Passero+One&family=Slackey&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DynaPuff:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&family=Momo+Trust+Display&family=Momo+Trust+Sans&family=Passero+One&family=Patrick+Hand&family=Slackey&family=Sriracha&display=swap');
+
+:root {
+
+    --fonte1: verdana, geneva, tahoma, sans-serif;
+    --fonte2: 'passion one', cursive;
+    --fonte3: 'Srirach', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -9,6 +20,7 @@ html,
 bory {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -20,6 +32,8 @@ header {
 header>h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 3em;
 }
 
 header>p {
@@ -37,26 +51,30 @@ header a:hover,
 footer a {
     text-decoration: underline;
 }
-section{
-    padding-top:10vh ;
+
+section {
+    padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
 }
 
-section.imagem > p{
-background-color: rgba(0, 0, 0, 0.445);
- width: 400px;
+section.imagem>p {
+    background-color: rgba(0, 0, 0, 0.445);
+    display: inline-block;
+    padding: 5px;
 }
 
 section.normal {
     background-color: white;
-    color: rgb(163, 159, 159);
+    color: rgb(6, 6, 6);
 }
+
 section.imagem {
     background-color: rgb(42, 41, 41);
     color: white;
-   
+
 
 }
 
@@ -65,5 +83,7 @@ footer {
     text-align: center;
     color: white;
     padding: 10px;
+    font-size: 13px;
+    font-family: var(--fonte1);
 
 }
