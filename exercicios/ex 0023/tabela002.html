@@ -6,10 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
-        body {
+        * {
+            margin: auto;
+            padding: 10px;
+        }
 
+        body {
+            padding: 10px;
+            text-align: center;
             font-family: Arial, Helvetica, sans-serif;
 
+        }
+
+        caption {
+            background-color: rgb(162, 177, 177);
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
         }
 
         table {
@@ -22,18 +35,34 @@
         th {
 
             border: 1px solid black;
+            padding: 10px;
         }
 
         thead {
             background-color: rgb(116, 125, 125);
             color: white;
         }
-        tfoot{
+
+        tbody>tr:nth-child(odd) {
+            background-color: lightgrey;
+        }
+
+        tbody> :nth-child(even) {
+            background-color: rgb(201, 185, 162);
+        }
+
+        tfoot {
             background-color: rgb(116, 125, 125);
             color: white;
         }
-        td.num{
-            text-align:right ;
+
+        /* No seu arquivo CSS ou dentro da tag <style> */
+        tfoot td {
+            text-align: center;
+        }
+
+        td.num {
+            text-align: right;
         }
     </style>
 </head>
@@ -53,37 +82,89 @@
 
     -->
     <table>
+        <caption>População dos estados de Portugal</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Municípios</th>
+                <th scope="col" style="width: 20px;">População</th>
+                <th scope="col" style="width: 10px;">Homens</th>
+                <th scope="col" style="width: 10px;">Mulhes</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Aveiro</td>
+                <th scope="row">Aveiro</th> 
                 <td class="num">88,154</td>
+                <td class="num">61%</td>
+                <td class="num">40%</td>
             </tr>
             <tr>
-                <td>Ilhavo</td>
+                <th scope="row">Ilhavo</th>
                 <td class="num">43.210</td>
+                <td class="num">62%</td>
+                <td class="num">40%</td>
             </tr>
             <tr>
-                <td>Vagos</td>
+                <th scope="row">Vagos</th>
                 <td class="num">25.167</td>
+                <td class="num">58%</td>
+                <td class="num">42%</td>
             </tr>
             <tr>
-                <td>Murtosa</td>
+                <th scope="row">Murtosa</th>
                 <td class="num">11.360</td>
+                <td class="num">60%</td>
+                <td class="num">40%</td>
             </tr>
             <tr>
-                <td>Estarreja</td>
+                <th scope="row">Estarreja</th>
                 <td class="num">27.474</td>
+                <td class="num">60%</td>
+                <td class="num">40%</td>
             </tr>
+            <tr>
+                <th scope="row ">Agueda</th>
+                <td class="num">47.727</td>
+                <td class="num">60%</td>
+                <td class="num">40%</td>
+            </tr>
+            <tr>
+                <th scope="row">Albergaria-a-Velha</th>
+                <td class="num">25.252</td>
+                <td class="num">60%</td>
+                <td class="num">40%</td>
+            </tr>
+            <tr>
+                <th scope="row">Anadia</th>
+                <td class="num">28.512</td>
+                <td class="num">60%</td>
+                <td class="num">40%</td>
+            </tr>
+            <tr>
+                <th scope="row">Oliveira do bairro</th>
+                <td class="num">25.779</td>
+                <td class="num">60%</td>
+                <td class="num">40%</td>
+            </tr>
+            <tr>
+                <th scope="row">Ovar</th>
+                <td class="num">16.849</td>
+                <td class="num">60%</td>
+                <td class="num">40%</td>
+            </tr>
+            <tr>
+                <th scope="row">Sever do Vouga</th>
+                <td class="num">11.023</td>
+                <td class="num">60%</td>
+                <td class="num">40%</td>
+
+            </tr>
+
+
         </tbody>
         <tfoot>
-            <th>Total Habitantes</th>
-            <td class="num"><strong>10.749.635</strong></td>
+            <th scope="row">Total Habitantes</th>
+            <td colspan="3"><strong>350.507</strong></td>
         </tfoot>
     </table>
 </body>
