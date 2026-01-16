@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabela</title>
+    <style>
+        
+        body { /* Aqui é formatação de início de tabela começando em body e terminando em th,td!*/
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table {
+    border-collapse: collapse; /* Deixa as bordas finas e unidas */
+    width: 100%;
+    max-width: 600px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Suas classes originais */
+.cnome { background-color: #7fffd4; } /* Aquamarine */
+.cgrupo { background-color: #808080; } /* Gray */
+
+/* O Efeito de Hover */
+tr:hover td {
+    background-color: #ffd700 !important; /* O !important garante que essa cor vença a cor da coluna */
+    color: black;
+}
+
+        /* Quando o mouse passar por cima da linha (tr) */
+tbody tr:hover {
+    background-color: #ffff99; /* Um amarelo suave ou qualquer cor de sua preferência */
+    cursor: pointer; /* Muda o ícone do mouse para a "mãozinha" */
+}
+
+    </style>
+</head>
+<body>
+    <table>
+        <col class="cnome">
+        <col class="cgrupo" span="3">
+        
+        <caption>Cadastro</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Nomes</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td>vendedor</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>39</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Otávio</td>
+                <td>M</td>
+                <td>22</td>
+                <td>Nutricionista</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
