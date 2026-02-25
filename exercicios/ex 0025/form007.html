@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #555;
+        }
+
+        label {
+            margin-left: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="iest">Estado:</label>
+            <select name="estado" id="iest">
+
+                <option value="" selected>escolha seu estado</option>
+
+                <optgroup label="Região Sudeste">
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="mg">Minas Gerais</option>
+                    <option value="df">Distrito Federal</option>
+                </optgroup>
+
+
+                <optgroup label="Região Nordeste">
+                    <option value="ma">Maranhão</option>
+                    <option value="ba">Bahia</option>
+                    <option value="ce">Ceará</option>
+                    <option value="pe">Pernambuco</option>
+                    <option value="rs">Rio Grande do Sul</option>
+                    <option value="sc">Santa Catarina</option>
+                </optgroup>
+
+                
+            </select>
+            <p>
+                    <label for="iprof">Profissão:</label>
+                    <input type="text" name="prof" id="iprof" list="profissoes">
+                    <datalist id="profissoes">
+                        <option value="Engenheiro">
+                        <option value="Médico">
+                        <option value="Professor">
+                        <option value="Advogado">
+                        <option value="Arquiteto">
+
+                    </datalist>
+                </p>
+                <label for="imsg">Mensagem:</label>
+                <textarea name="msg" id="imsg" cols="30" rows="5"></textarea>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+</body>
+
+</html>
