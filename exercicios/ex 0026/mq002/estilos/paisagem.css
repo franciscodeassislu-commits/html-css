@@ -1,2 +1,6 @@
 @charset "UTF-8";
 /* Aparencia para paisagem */
+body {
+  background-image: url(../imagens/Design\ sem\ nome.png);
+  background-position:center
+}
