@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GW Soluções em Vidros</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class ="form-gw">
+    <h2>Solicitar Orçamento</h2>
+    <form action="SEU_EMAIL_AQUI" method="POST">
+      <input type="text" name="nome" placeholder="Seu Nome Completo" required>
+      <input type="tel" name="telefone" placeholder="Telemóvel / WhatsApp" required>
+
+      <input type="text" name="morada" placeholder="Morada da Obra (Rua, Localidade)" required>
+
+      <select name="servico">
+        <option value="">Selecione o Serviço</option>
+        <option value="sacada">Sacada Envidraçada</option>
+        <option value="escada">Escada de Vidro</option>
+        <option value="wc">Casas de banhos</option>
+        <option value="outro">Outros Serviços</option>
+      </select>
+
+      <label style="font-size: 14px; color: #666;">Melhor horário para visita:</label>
+      <select name="horario_preferencial">
+        <option value="manha">Manhã (09h - 12h)</option>
+        <option value="tarde">Tarde (14h - 18h)</option>
+        <option value="qualquer">Qualquer Horário</option>
+      </select>
+
+      <textarea name="mensagem" placeholder="Detalhes do projeto (ex: medidas aproximadas)"></textarea>
+
+      <button type="submit">ENVIAR PEDIDO</button>
+
+
+    </form>
+
+  </div>
+  <section class="servicos-section">
+    <div class="servicos-grid">
+
+      <article class="card-servico">
+        <div class="card-imagem">
+          <img src="imagens-gw/Sacadas.png" alt="Sacada Envidraçada GW">
+          <span class="tag">Destaque</span>
+        </div>
+        <div class="card-corpo">
+          <h3>Sacadas </h3>
+          <p>Ganhe mais espaço e elegância para o seu apartamento com o nosso sistema de envidraçamento.</p>
+          <button class="btn-saber-mais">Ver Galeria</button>
+        </div>
+      </article>
+
+      <article class="card-servico">
+        <div class="card-imagem">
+          <img src="imagens-gw/Escada.png" alt="Escada de Vidro GW">
+          <span class="tag">Moderno</span>
+        </div>
+        <div class="card-corpo">
+          <h3>Escadas</h3>
+          <p>Segurança e sofisticação com guardas e degraus em vidro temperado de alta resistência.</p>
+          <button class="btn-saber-mais">Ver Galeria</button>
+        </div>
+      </article>
+
+      <article class="card-servico">
+        <div class="card-imagem">
+          <img src="imagens-gw/Divisórias.png" alt="Divisórias de Vidro GW">
+          <span class="tag">Premium</span>
+        </div>
+        <div class="card-corpo">
+          <h3>Divisórias e Portas</h3>
+          <p>Soluções ideais para escritórios e interiores que privilegiam a luz natural e o isolamento.</p>
+          <button class="btn-saber-mais">Ver Galeria</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+  </div>
+
+
+  <footer class="footer-gw">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="Meus-Produtos/logo-gw.png" alt="GW Soluções em Vidros">
+        <p>Da urgência ao acabamento impecável.</p>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p>📍 Aveiro, Portugal</p>
+        <p>📞 913 995 876</p>
+        <p>✉️ info@gwvidros.pt</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 GW Soluções em Vidros. Todos os direitos reservados.</p>
+      <p class="dev-creditos">Desenvolvido com 💙 por <a href="https://github.com/franciscodeassislu-commits"
+          target="_blank">Francisco Silva</a> Clique aqui</p>
+    </div>
+  </footer>
+  <script ></script>
+</body>
+
+</html>
