@@ -35,7 +35,7 @@ tilos para impressão*/
     }
     
 }
- @media screen  and (min-width: 600px) and (max-width: 992px) { /*estilos para tablet*/
+ @media screen  and (min-width: 600px)  { /*estilos para tablet*/
     body{
         background: #080808 url(../imagens/back-tablet.jpg) no-repeat ;
         background-size: cover;
@@ -58,7 +58,7 @@ tilos para impressão*/
     }
 
  }
-    @media screen  and (min-width: 768px) {
+    @media screen  and (min-width: 768px) { /*estilos para desktop*/
         body{
             background: #080808 url(../imagens/back-pc.jpg) no-repeat ;
             background-size: cover;
@@ -81,7 +81,7 @@ tilos para impressão*/
         }
     
     }
-    @media screen  and (min-width: 1200px) {
+    @media screen  and (min-width: 922px) { /*estilos para grandestelas*/
         body{
             background: #080808 url(../imagens/back-tv.jpg) no-repeat ;
             background-size: cover;

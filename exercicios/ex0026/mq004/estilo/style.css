@@ -9,7 +9,7 @@
 }
 html {
     
-    height: 100vw;
+    height: 100vh;
 }
 body {
     background: #080808 url(../imagens/back-phone.jpg) no-repeat ;
@@ -40,18 +40,18 @@ img{
     display: block;
     margin: auto;
 }
-img#phone {
+#phone {
     display: block;
 }
-img#tablet {
+#tablet {
     display: none;
 }
-img#print {
+#print {
     display: none;
 }
-img#pc {
+#pc {
     display: none;
 }
-img#tv {
+#tv {
     display: none;
 }
