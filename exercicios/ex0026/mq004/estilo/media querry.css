@@ -13,26 +13,39 @@ grandestelas: acima de 1200px
 
 @media print {/*es
 tilos para impressão*/
-    body{
+   *{
+     font-family: 'Courier New', Courier, monospace;
+   }
+body{
         background: #080808 url(../imagens/back-print.jpg) no-repeat ;
         background-size: cover;
         background-position: center center;
+       
+       
+    }
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+    main{
+        border: 2px solid rgba(0, 0, 0, 0.71);
+    }
+    main ::after{
+        content: "Impressão em andamento...";
+        display: block;
+        text-align: center;
+        font-size: 1.5em;
+        color: black;
+        margin-top: 10px;
     }
     img#phone {
         display: none;
     }
-    img#tablet {
-        display: none;
-    }
+    
     img#print {
         display: block;
     }
-    img#pc {
-        display: none;
-    }
-    img#tv {
-        display: none;
-    }
+   
     
 }
  @media screen  and (min-width: 600px)  { /*estilos para tablet*/
@@ -47,15 +60,7 @@ tilos para impressão*/
     img#tablet {
         display: block;
     }
-    img#print {
-        display: none;
-    }
-    img#pc {
-        display: none;
-    }
-    img#tv {
-        display: none;
-    }
+   
 
  }
     @media screen  and (min-width: 768px) { /*estilos para desktop*/
@@ -64,21 +69,15 @@ tilos para impressão*/
             background-size: cover;
             background-position: center center;
         }
-        img#phone {
-            display: none;
-        }
+       
         img#tablet {
             display: none;
         }
-        img#print {
-            display: none;
-        }
+        
         img#pc {
             display: block;
         }
-        img#tv {
-            display: none;
-        }
+        
     
     }
     @media screen  and (min-width: 922px) { /*estilos para grandestelas*/
@@ -87,15 +86,7 @@ tilos para impressão*/
             background-size: cover;
             background-position: center center;
         }
-        img#phone {
-            display: none;
-        }
-        img#tablet {
-            display: none;
-        }
-        img#print {
-            display: none;
-        }
+       
         img#pc {
             display: none;
         }
