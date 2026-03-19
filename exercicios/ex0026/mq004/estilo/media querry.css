@@ -1,36 +1,39 @@
 @charset "UTF-8";
-/* todas as demais medias*/
-----------------------------
-/*typical Device Breakpoints 
--------------------------------------------
-pequenas telas: até 600px
-Telemovel:até 600px ate 768px
-Tablet: 768px a 992px
-Desktop: 992px a 1200px
-grandestelas: acima de 1200px
-*/
+@charset "UTF-8";
+
+/* =============================================
+   TYPICAL DEVICE BREAKPOINTS
+   Pequenas telas: até 600px
+   Telemóvel: 600px até 768px
+   Tablet: 768px até 992px
+   Desktop: 992px até 1200px
+   Grandes telas: acima de 1200px
+   ============================================= */
 
 
+@media print {
+     /*estilos para impressão*/
 
-@media print {/*es
-tilos para impressão*/
    *{
      font-family: 'Courier New', Courier, monospace;
    }
+
 body{
         background: #080808 url(../imagens/back-print.jpg) no-repeat ;
         background-size: cover;
         background-position: center center;
-       
-       
+              
     }
+
     main h1{
         color: black;
         text-shadow: none;
     }
+
     main{
         border: 2px solid rgba(0, 0, 0, 0.71);
     }
+
     main ::after{
         content: "Impressão em andamento...";
         display: block;
@@ -39,6 +42,7 @@ body{
         color: black;
         margin-top: 10px;
     }
+
     img#phone {
         display: none;
     }
@@ -49,12 +53,15 @@ body{
    
     
 }
+
  @media screen  and (min-width: 600px)  { /*estilos para tablet*/
+    
     body{
         background: #080808 url(../imagens/back-tablet.jpg) no-repeat ;
         background-size: cover;
         background-position: center center;
     }
+
     img#phone {
         display: none;
     }
@@ -65,6 +72,7 @@ body{
 
  }
     @media screen  and (min-width: 768px) { /*estilos para desktop*/
+        
         body{
             background: #080808 url(../imagens/back-pc.jpg) no-repeat ;
             background-size: cover;
@@ -82,6 +90,7 @@ body{
     
     }
     @media screen  and (min-width: 922px) { /*estilos para grandestelas*/
+       
         body{
             background: #080808 url(../imagens/back-tv.jpg) no-repeat ;
             background-size: cover;
@@ -91,6 +100,7 @@ body{
         img#pc {
             display: none;
         }
+        
         img#tv {
             display: block;
         }
