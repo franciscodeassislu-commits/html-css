@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="estilo/style.css" media="all">
+    
+</head>
+
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <i id="baurgue" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <menu id="intens">
+            <lu>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Maps</a></li>
+            </lu>
+        </menu>
+    </header>
+    
+    <main>
+        <article>
+    <h2>Bem-vindo ao Meu Site</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quas nostrum incidunt corporis a tempore officia id! Nisi sequi porro, excepturi deserunt voluptate, enim temporibus, illo vero harum minima perferendis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quibusdam distinctio ut cum delectus reprehenderit consectetur sequi et dolorem soluta, sed, corporis itaque quos reiciendis ab, officiis quisquam voluptatem velit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ex suscipit minima deleniti modi porro facere delectus autem corrupti ipsa magni vel unde aut maiores sequi doloremque cupiditate dolores. Aspernatur!</p>
+    <p>Este é o conteúdo principal do meu site.</p>
+
+        </article>
+    </main>
+    ><script>
+        function clickMenu(){
+            var menu = document.getElementById('intens');
+            if(menu.style.display === 'block'){
+                menu.style.display = 'none';
+            }else{
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -71,6 +71,11 @@
     padding-top: 20px;
     font-size: 14px;
 }
+footer .footer-logo img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
 
 .dev-creditos a {
     color: #00B5B5;
