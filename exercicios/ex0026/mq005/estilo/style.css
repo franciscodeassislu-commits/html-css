@@ -73,10 +73,12 @@ main {
     background-color: white;
     margin: 20px;
     border-radius: 10px;
+     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.281);
 }
 
 article,h2 {
     margin-bottom: 20px;
+   
 }
 
 article,p {
@@ -84,3 +86,4 @@ article,p {
    margin-bottom: 20px;
    text-indent: 10px;
 }
+

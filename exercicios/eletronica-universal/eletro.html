@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletrônica Universal | Assistência Técnica Profissional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --azul: #1a4a8e;
+            --laranja: #f39200;
+            --verde: #25d366;
+            --escuro: #1e1e1e;
+        }
+
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; line-height: 1.6; background: #f9f9f9; }
+        .container { max-width: 1100px; margin: auto; padding: 20px; }
+
+        /* Header e Hero */
+        header { background: #fff; padding: 20px; text-align: center; border-bottom: 4px solid var(--azul); }
+        .hero { background: linear-gradient(rgba(26,74,142,0.9), rgba(26,74,142,0.9)), url('sua-foto-loja.jpg'); 
+                color: white; padding: 60px 20px; text-align: center; background-size: cover; }
+
+        /* Cards de Galeria (6 cards) */
+        .grid-galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 40px 0; }
+        .card-foto { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .card-foto img { width: 100%; height: 200px; object-fit: cover; cursor: pointer; transition: 0.3s; }
+        .card-foto img:hover { transform: scale(1.05); }
+        .card-info { padding: 15px; text-align: center; }
+
+        /* Tabela de Preços Atualizável */
+        .tabela-container { background: #fff; padding: 20px; border-radius: 10px; overflow-x: auto; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th { background: var(--azul); color: white; padding: 12px; text-align: left; }
+        td { padding: 12px; border-bottom: 1px solid #ddd; }
+        tr:hover { background: #f1f1f1; }
+        .badge-novo { background: var(--laranja); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+
+        /* Botões */
+        .btn { display: inline-block; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; margin: 5px; transition: 0.3s; border: none; cursor: pointer; }
+        .btn-whats { background: var(--verde); color: white; }
+        .btn-email { background: var(--azul); color: white; }
+        .btn-whats:hover, .btn-email:hover { opacity: 0.8; transform: translateY(-2px); }
+
+        /* Seção de Contato Profissional */
+        .contato-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 40px 0; }
+
+        footer { background: var(--escuro); color: white; text-align: center; padding: 30px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="color:var(--azul); margin:0;">ELETRÔNICA <span style="color:var(--laranja)">UNIVERSAL</span></h1>
+    <p>Especialistas em Assistência e Som Automotivo</p>
+</header>
+
+<section class="hero">
+    <h1>Assistência Técnica de Alta Precisão</h1>
+    <p>Reparos em TV, Som, Alarmes e muito mais. Solicite seu orçamento agora!</p>
+    <div class="contato-links">
+        <a href="https://wa.me/5591999999999?text=Quero+um+orçamento" class="btn btn-whats"><i class="fab fa-whatsapp"></i> Orçamento via WhatsApp</a>
+        <a href="mailto:contato@eletronicauniversal.com" class="btn btn-email"><i class="fas fa-envelope"></i> Pedido via E-mail</a>
+    </div>
+</section>
+
+<div class="container">
+    
+    <h2 style="text-align:center; color:var(--azul);">Nossa Galeria de Serviços</h2>
+    <div class="grid-galeria">
+        <!-- Card 1 -->
+        <div class="card-foto">
+            <img src="https://via.placeholder.com/400x300" alt="Reparo de TV">
+            <div class="card-info"><h3>Reparo de TVs</h3><p>LED, LCD e Smart TVs</p></div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card-foto">
+            <img src="https://i.ebayimg.com/images/g/8EUAAeSwfyppqcKz/s-l1600.webp" alt="Som Automotivo">
+            <div class="card-info"><h3>Som Automotivo</h3><p>Instalação Pioneer e Outros</p></div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card-foto">
+            <img src="https://via.placeholder.com/400x300" alt="Módulos">
+            <div class="card-info"><h3>Conserto de Módulos</h3><p>Amplificadores de potência</p></div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card-foto">
+            <img src="https://via.placeholder.com/400x300" alt="Alarmes">
+            <div class="card-info"><h3>Alarmes e Segurança</h3><p>Instalação Completa</p></div>
+        </div>
+        <!-- Card 5 -->
+        <div class="card-foto">
+            <img src="https://via.placeholder.com/400x300" alt="Caixas de Som">
+            <div class="card-info"><h3>Caixas Ativas</h3><p>Manutenção Profissional</p></div>
+        </div>
+        <!-- Card 6 -->
+        <div class="card-foto">
+            <img src="https://via.placeholder.com/400x300" alt="Componentes">
+            <div class="card-info"><h3>Venda de Peças</h3><p>Componentes Originais</p></div>
+        </div>
+    </div>
+
+    <h2 style="text-align:center; color:var(--azul);">Tabela de Serviços e Produtos</h2>
+    <div class="tabela-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Serviço / Produto</th>
+                    <th>Descrição</th>
+                    <th>Valor Estimado</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Limpeza Técnica TV</td>
+                    <td>Prevenção de oxidação e limpeza interna</td>
+                    <td>R$ 150,00</td>
+                    <td>Disponível</td>
+                </tr>
+                <tr>
+                    <td>Instalação Som Pioneer</td>
+                    <td>Mão de obra especializada <span class="badge-novo">Novo</span></td>
+                    <td>A partir de R$ 200,00</td>
+                    <td>Promoção</td>
+                </tr>
+                <tr>
+                    <td>Reparo de Controle Remoto</td>
+                    <td>Troca de contatos e limpeza</td>
+                    <td>R$ 40,00</td>
+                    <td>Em estoque</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><small>* Os preços podem variar de acordo com o modelo do componente.</small></p>
+    </div>
+
+    <section style="margin-top:50px; text-align:center;">
+        <h2 style="color:var(--azul);">Por que escolher a Eletrônica Universal?</h2>
+        <div style="display:flex; flex-wrap:wrap; justify-content:space-around; gap:20px;">
+            <div><i class="fas fa-check-circle" style="color:var(--laranja)"></i> Peças Originais</div>
+            <div><i class="fas fa-clock" style="color:var(--laranja)"></i> Orçamento Rápido</div>
+            <div><i class="fas fa-shield-alt" style="color:var(--laranja)"></i> Garantia de Serviço</div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p><strong>Eletrônica Universal</strong><br>Rua das Palmeiras, 37 - Pará</p>
+    <div class="contato-links">
+        <a href="https://wa.me/5591999999999" class="btn btn-whats">WhatsApp</a>
+    </div>
+    <p>&copy; 2026 Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
