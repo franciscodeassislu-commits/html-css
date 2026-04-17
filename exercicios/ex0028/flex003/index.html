@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: rgb(199, 131, 245);
+            /*Efeitto display flex em baixo*/
+            display: flex;  /*Definir o elemento como um contêiner flexível*/
+            flex-flow:  row wrap;  /*Definir a direção dos itens e impedir quebra de linha*/
+             
+
+            padding: 10px;   /*Criar espaçamento interno*/
+            border-radius: 5px;  /*Criar cantos arredondados*/
+        }
+
+        div.intem {
+            color: aliceblue;
+            background-color: rgb(145, 63, 222);
+            border: 1px solid rgb(13, 13, 13);
+            border-radius: 3px;
+            text-align: center;
+            padding: 10px;
+            margin: 3px;
+            flex: auto;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="intem">caixa 1</div>
+        <div class="intem">caixa 2</div>
+        <div class="intem">caixa 3</div>
+        <div class="intem">caixa 4</div>
+        <div class="intem">caixa 5</div>
+        <div class="intem">caixa 6</div>
+        <div class="intem">caixa 7</div>
+    </div>
+    
+</body>
+
+</html>
