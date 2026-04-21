@@ -7,11 +7,13 @@
     <title>Flexible Box</title>
     <style>
         div.conteiner {
+            height: 300px;
             background-color: rgb(199, 131, 245);
             /*Efeitto display flex em baixo*/
             display: flex;  /*Definir o elemento como um contêiner flexível*/
-            flex-flow:  row wrap;  /*Definir a direção dos itens e impedir quebra de linha*/
-             
+            flex-flow:  row wrap ;  /*Definir a direção dos itens e impedir quebra de linha*/
+             justify-content: space-around;
+                align-items:stretch;  /*Alinhamento vertical dos itens*/
 
             padding: 10px;   /*Criar espaçamento interno*/
             border-radius: 5px;  /*Criar cantos arredondados*/
@@ -25,7 +27,7 @@
             text-align: center;
             padding: 10px;
             margin: 3px;
-            flex: auto;
+     
         }
         
     </style>
