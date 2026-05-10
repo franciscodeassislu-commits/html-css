@@ -20,14 +20,41 @@ header {
     background-color: rgb(167, 162, 162);
     color: white;
     padding: 10px;
+    border-radius: 8px;
+
+    display:flex;
+   flex-flow:row wrap;
+   justify-content:space-between;
+   align-items:center;
 }
 
 header h1 {
-    border: 1px dotted black;
+    border: 3px dotted black;
+    flex:0 0 300px;
 }
 
 header nav {
-    border: 1px dotted black;
+    border: 3px dotted black;
+
+    display:flex;
+flex-flow:row wrap;
+justify-content:flex-end;
+}
+header nav a {
+    background-color: rgb(112, 40, 40);
+    color:white;
+    padding:10px;
+    border-radius:3px;
+    margin: 5px;
+    text-decoration:none;
+    text-align:center;
+}
+header nav a:hover{
+    background-color: rgb(212, 140, 140);
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    transform: scale(1.1);
+   
 }
 
 main {
