@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    font-size: 2.5em;
+    font-size: 3.5em;
     background: #fff;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -52,6 +52,7 @@ header {
     overflow: hidden;
     padding-bottom: 20px;
     
+    
 }
 .card:hover {
     transform: translateY(-5px);
@@ -72,7 +73,7 @@ header {
 }
 
 .price {
-    font-size: 1.2em;
+    font-size: 2.2em;
     font-weight: bold;
     color: #4a3b32;
     margin: 10px 0;
