@@ -13,6 +13,7 @@ header {
     background: #fff;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+
     position: fixed;
     top: 0;
     width: 100%;
@@ -91,4 +92,8 @@ header {
     border-radius: 20px;
     font-weight: bold;
     display: inline-block;
+}
+.btn-whatsapp:hover {
+    background-color: #18b253;
+    transition: background-color 0.3s ease;
 }
