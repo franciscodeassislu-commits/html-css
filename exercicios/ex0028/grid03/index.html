@@ -8,27 +8,32 @@
     <style>
         div.containe {
             border: 3px solid #0b4fec;
+            
             display: grid;
-           height: auto;
+           
            /*Grids*/
-            grid-template-columns: auto auto auto;
-            grid-template-rows: 100px 100px 100px;
+           
+            grid-template-rows:repeat(3, 80px);
             gap: 10px;
           /*Itens*/
-            align-items: normal;
-            justify-items: normal;
-            align-content: normal;
-                justify-content: normal;
+          grid-template-columns: 100px 40% repeat(2, 1fr);
+        
+          grid-auto-rows: 80px;
+          grid-auto-columns: 120px;
+            place-items:normal normal;
+           place-content: normal normal;
+                
 
 
   }
 
         div.item {
-           
+            margin: 4px;
+           border-radius: 10px;
             font-size: 30px;
             color: #f6f0f0;
-            background-color: #8238e3;
-            border: 3px solid #990303;
+            background-color: #7419eaec;
+            border: 3px solid #3c3c3c;
             padding: 5px;
            
         }
@@ -51,6 +56,8 @@
         <div class="item">G</div>
         <div class="item">H</div>
         <div class="item">I</div>
+        <div class="item">J</div>
+       
 
     </div>
 </body>
